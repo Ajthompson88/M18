@@ -6,6 +6,7 @@ import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
 import { authenticateToken } from './services/auth.js';
 
+const __dirname = path.resolve();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
